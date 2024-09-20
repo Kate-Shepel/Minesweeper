@@ -1,0 +1,47 @@
+.cell {
+  background-color: #c0d4e1;
+  border: 2px outset #d9d7d7;
+  width: calc((60vw - 70px) / 10);
+  height: calc((60vw - 70px) / 10);
+  max-width: 32px;
+  max-height: 32px;
+  text-align: center;
+  line-height: 30px;
+  user-select: none;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all .2s ease-in-out;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+
+.cell:active {
+  background-color: #b2c5d2;
+  border: 2px outset #8d9da6;
+  transform: scale(0.90);
+}
+.cell[data-mine-count="1"] {
+  color: blue;
+}
+
+.cell[data-mine-count="2"] {
+  color: green;
+}
+
+.cell[data-mine-count="3"] {
+  color: red;
+}
+
+.cell[data-mine-count="4"] {
+  color: purple;
+}
+
+.chosen {
+  background-color: #b2c5d2;
+  border: 2px outset #8d9da6;
+  transform: scale(0.90);
+}
+
+.flaged_incorrectly {
+  background-color: #d9b7de;
+}
